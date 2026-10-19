@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_blank" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=Plus+Jakarta+Sans:wght@600;700;800&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script><script id="tailwind-config">tailwind.config = {
+    darkMode: "class",
+    theme: {
+      extend: {
+        "colors": {
+          "on-primary": "#ffffff",
+          "on-tertiary": "#ffffff",
+          "surface-container-highest": "#dae2fd",
+          "on-error-container": "#93000a",
+          "on-tertiary-fixed": "#001f26",
+          "tertiary-fixed-dim": "#4cd7f6",
+          "primary-fixed-dim": "#c3c0ff",
+          "secondary-container": "#8a4cfc",
+          "secondary-fixed": "#eaddff",
+          "surface-container-high": "#e2e7ff",
+          "inverse-primary": "#c3c0ff",
+          "inverse-on-surface": "#eef0ff",
+          "on-secondary-container": "#fffbff",
+          "primary-container": "#4f46e5",
+          "on-background": "#131b2e",
+          "background": "#faf8ff",
+          "inverse-surface": "#283044",
+          "outline-variant": "#c7c4d8",
+          "secondary": "#712ae2",
+          "on-secondary-fixed-variant": "#5a00c6",
+          "surface-container-low": "#f2f3ff",
+          "on-tertiary-fixed-variant": "#004e5c",
+          "primary": "#3525cd",
+          "on-primary-fixed": "#0f0069",
+          "surface-tint": "#4d44e3",
+          "outline": "#777587",
+          "secondary-fixed-dim": "#d2bbff",
+          "on-primary-fixed-variant": "#3323cc",
+          "tertiary-fixed": "#acedff",
+          "surface-bright": "#faf8ff",
+          "on-surface-variant": "#464555",
+          "surface-container-lowest": "#ffffff",
+          "surface-variant": "#dae2fd",
+          "error-container": "#ffdad6",
+          "surface-dim": "#d2d9f4",
+          "on-secondary-fixed": "#25005a",
+          "on-primary-container": "#dad7ff",
+          "primary-fixed": "#e2dfff",
+          "on-tertiary-container": "#93e8ff",
+          "on-secondary": "#ffffff",
+          "on-surface": "#131b2e",
+          "surface": "#faf8ff",
+          "tertiary-container": "#006a7c",
+          "error": "#ba1a1a",
+          "tertiary": "#00505f",
+          "surface-container": "#eaedff",
+          "on-error": "#ffffff"
+        },
+        "borderRadius": {
+          "DEFAULT": "0.25rem",
+          "lg": "0.5rem",
+          "xl": "0.75rem",
+          "2xl": "1rem",
+          "full": "9999px"
+        },
+        "fontFamily": {
+          "headline-lg": ["Plus Jakarta Sans"],
+          "headline-md": ["Plus Jakarta Sans"],
+          "headline-sm": ["Plus Jakarta Sans"],
+          "headline-xl": ["Plus Jakarta Sans"],
+          "body-sm": ["Inter"],
+          "body-md": ["Inter"],
+          "body-lg": ["Inter"],
+          "label-sm": ["Inter"],
+          "label-md": ["Inter"],
+          "label-lg": ["Inter"]
+        }
+      }
+    }
+  }</script></head><body class="bg-surface font-body-md text-body-md text-on-surface antialiased min-h-screen selection:bg-primary-container selection:text-on-primary-container"><main class="w-full min-h-screen flex flex-col justify-center"><div class="flex flex-col w-full min-h-screen">
+<div class="grid grid-cols-1 lg:grid-cols-12 min-h-screen w-full">
+<!-- Left Column (40% width on large screens): Ultra-clean Minimalist Sign-in Column -->
+<div class="lg:col-span-5 xl:col-span-5 flex flex-col justify-between p-6 sm:p-10 lg:p-12 xl:p-14 bg-surface-container-lowest border-r border-surface-container-high/70 relative z-20">
+<!-- Brand Header -->
+<div class="flex items-center justify-between w-full mb-8">
+<div class="flex items-center space-x-3">
+<div class="w-10 h-10 rounded-xl bg-primary flex items-center justify-center text-on-primary shadow-md shadow-primary/20">
+<span class="material-symbols-outlined text-[22px]">shield_lock</span>
+</div>
+<div>
+<span class="font-headline-sm text-headline-sm tracking-tight text-on-surface block leading-none font-bold">Sovereign<span class="text-primary">Auth</span></span>
+<span class="font-label-sm text-label-sm text-on-surface-variant tracking-wider uppercase">Identity Infrastructure</span>
+</div>
+</div>
+<div class="flex items-center space-x-1.5 px-2.5 py-1 rounded-full bg-emerald-50 border border-emerald-200 text-emerald-800 text-[11px] font-medium">
+<span class="w-1.5 h-1.5 rounded-full bg-emerald-500 animate-pulse"></span>
+<span>All systems operational</span>
+</div>
+</div>
+<!-- Centered Sign-in Form -->
+<div class="w-full max-w-[400px] mx-auto my-auto py-2">
+<div class="mb-6">
+<h1 class="font-headline-lg text-2xl sm:text-[28px] font-bold text-on-surface tracking-tight mb-1.5">Sign in</h1>
+<p class="font-body-md text-body-md text-on-surface-variant">Enter your credentials to access your workspace</p>
+</div>
+<!-- Quick Social SSO Logins -->
+<div class="grid grid-cols-2 gap-3 mb-5">
+<button class="flex items-center justify-center space-x-2 h-11 px-3 rounded-lg border border-surface-container-high hover:border-outline-variant bg-surface-container-lowest hover:bg-surface-container-low transition-all duration-150 text-on-surface text-sm font-semibold" type="button">
+<svg class="w-4 h-4 flex-shrink-0" viewbox="0 0 24 24"><path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z" fill="#4285F4"></path><path d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z" fill="#34A853"></path><path d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.06H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.94l2.85-2.22.81-.63z" fill="#FBBC05"></path><path d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.06l3.66 2.84c.87-2.6 3.3-4.52 6.16-4.52z" fill="#EA4335"></path></svg>
+<span>Google</span>
+</button>
+<button class="flex items-center justify-center space-x-2 h-11 px-3 rounded-lg border border-surface-container-high hover:border-outline-variant bg-surface-container-lowest hover:bg-surface-container-low transition-all duration-150 text-on-surface text-sm font-semibold" type="button">
+<svg class="w-4 h-4 flex-shrink-0 fill-on-surface" viewbox="0 0 24 24"><path clip-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.53 1.032 1.53 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z" fill-rule="evenodd"></path></svg>
+<span>GitHub</span>
+</button>
+</div>
+<!-- Divider -->
+<div class="relative flex items-center justify-center mb-5">
+<div class="w-full h-px bg-surface-container-high"></div>
+<span class="absolute px-3 bg-surface-container-lowest text-[11px] font-medium uppercase tracking-wider text-outline">or email</span>
+</div>
+<!-- Form Inputs -->
+<form class="space-y-4" id="loginForm" onsubmit="event.preventDefault(); handleAuth();">
+<div class="space-y-1.5">
+<label class="block font-label-md text-label-md text-on-surface font-medium" for="email">Work Email</label>
+<div class="relative flex items-center">
+<span class="material-symbols-outlined absolute left-3.5 text-outline text-[19px] pointer-events-none">mail</span>
+<input class="w-full h-11 pl-10 pr-3.5 rounded-lg border border-surface-container-high focus:border-primary focus:ring-1 focus:ring-primary bg-surface-container-lowest text-on-surface font-body-md text-body-md placeholder:text-outline transition-colors" id="email" placeholder="name@company.com" required="" type="email"/>
+</div>
+</div>
+<div class="space-y-1.5">
+<div class="flex items-center justify-between">
+<label class="block font-label-md text-label-md text-on-surface font-medium" for="password">Password</label>
+<a class="text-xs text-primary font-medium hover:underline" href="#forgot">Forgot password?</a>
+</div>
+<div class="relative flex items-center">
+<span class="material-symbols-outlined absolute left-3.5 text-outline text-[19px] pointer-events-none">lock</span>
+<input class="w-full h-11 pl-10 pr-10 rounded-lg border border-surface-container-high focus:border-primary focus:ring-1 focus:ring-primary bg-surface-container-lowest text-on-surface font-body-md text-body-md placeholder:text-outline transition-colors" id="password" placeholder="••••••••••••" required="" type="password"/>
+<button aria-label="Toggle password visibility" class="absolute right-3 text-outline hover:text-on-surface transition-colors p-1" id="togglePassword" onclick="togglePasswordVisibility()" type="button">
+<span class="material-symbols-outlined text-[18px]" id="eyeIcon">visibility</span>
+</button>
+</div>
+</div>
+<div class="flex items-center justify-between pt-0.5">
+<label class="flex items-center space-x-2 text-xs text-on-surface-variant cursor-pointer select-none">
+<input class="w-4 h-4 rounded border-outline-variant text-primary focus:ring-primary/20 accent-primary" id="rememberMe" type="checkbox"/>
+<span>Remember for 30 days</span>
+</label>
+</div>
+<button class="w-full h-11 rounded-lg bg-primary hover:bg-primary/90 text-on-primary font-label-lg font-semibold flex items-center justify-center space-x-2 shadow-sm transition-all duration-150" id="submitBtn" type="submit">
+<span>Sign in to console</span>
+<span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+</button>
+</form>
+<!-- Alternative Single Sign-On / Magic Link -->
+<div class="mt-4 pt-4 border-t border-surface-container-high flex flex-col space-y-2">
+<button class="w-full h-10 rounded-lg border border-dashed border-outline-variant text-xs font-semibold text-on-surface-variant hover:text-primary hover:border-primary hover:bg-primary/5 flex items-center justify-center space-x-1.5 transition-colors" type="button">
+<span class="material-symbols-outlined text-[16px]">send_to_mobile</span>
+<span>Send magic sign-in link via email</span>
+</button>
+<button class="w-full h-10 rounded-lg text-xs font-semibold text-outline hover:text-on-surface flex items-center justify-center space-x-1.5 transition-colors" type="button">
+<span class="material-symbols-outlined text-[16px]">domain</span>
+<span>Sign in with Enterprise SAML / Okta</span>
+</button>
+</div>
+<!-- Footer Sign up note -->
+<p class="text-center text-xs text-on-surface-variant mt-6">
+        Don't have an enterprise account? 
+        <a class="text-primary font-semibold hover:underline ml-1" href="#signup">Contact Sales or Sign up</a>
+</p>
+</div>
+<!-- Security Micro-footer -->
+<div class="pt-4 flex items-center justify-center space-x-2 text-outline text-[12px]">
+<span class="material-symbols-outlined text-[15px] text-emerald-600">verified_user</span>
+<span>256-bit TLS encryption • Hardware token &amp; WebAuthn ready</span>
+</div>
+</div>
+<!-- Right Column (60% width on large screens): Expansive Product Showcase & Admin Security Preview Mockup -->
+<div class="hidden lg:flex lg:col-span-7 xl:col-span-7 relative flex-col justify-between p-10 xl:p-14 bg-gradient-to-br from-surface-container-low via-surface-container to-surface-container-high/80 overflow-hidden">
+<!-- Subtle Grid & Radial Background -->
+<div class="absolute inset-0 pointer-events-none">
+<div class="absolute -top-32 -right-32 w-96 h-96 rounded-full bg-primary/10 blur-3xl"></div>
+<div class="absolute -bottom-32 -left-20 w-96 h-96 rounded-full bg-secondary-container/10 blur-3xl"></div>
+<svg class="absolute inset-0 w-full h-full stroke-surface-tint/5 [mask-image:radial-gradient(100%_100%_at_top_right,white,transparent)]" height="100%" width="100%">
+<defs>
+<pattern height="32" id="preview-grid" patternunits="userSpaceOnUse" width="32">
+<path d="M 32 0 L 0 0 0 32" fill="none" stroke-width="1"></path>
+</pattern>
+</defs>
+<rect fill="url(#preview-grid)" height="100%" width="100%"></rect>
+</svg>
+</div>
+<!-- Top Badge Row -->
+<div class="relative z-10 flex items-center justify-between w-full">
+<div class="flex items-center space-x-2">
+<span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-surface-container-lowest/80 backdrop-blur-sm border border-outline-variant/30 text-xs font-semibold text-on-surface">
+<span class="material-symbols-outlined text-[15px] text-primary">verified</span>
+          SOC 2 Compliant
+        </span>
+<span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-surface-container-lowest/80 backdrop-blur-sm border border-outline-variant/30 text-xs font-semibold text-on-surface">
+<span class="material-symbols-outlined text-[15px] text-tertiary">check_circle</span>
+          GDPR Ready
+        </span>
+<span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-surface-container-lowest/80 backdrop-blur-sm border border-outline-variant/30 text-xs font-semibold text-on-surface">
+<span class="material-symbols-outlined text-[15px] text-secondary">bolt</span>
+          Zero Config
+        </span>
+</div>
+<span class="text-xs font-medium text-on-surface-variant/80">v4.18 Enterprise Cloud</span>
+</div>
+<!-- Centerpiece: Realistic Interactive Security Console Mockup with Floating Telemetry Cards -->
+<div class="relative z-10 my-auto py-6 max-w-2xl mx-auto w-full">
+<div class="relative">
+<!-- Main Admin Dashboard Frame -->
+<div class="rounded-2xl bg-surface-container-lowest border border-surface-container-highest shadow-2xl shadow-primary/10 overflow-hidden backdrop-blur-sm">
+<!-- Window Header Chrome -->
+<div class="px-5 py-3.5 bg-surface-container-lowest border-b border-surface-container-high flex items-center justify-between">
+<div class="flex items-center space-x-2">
+<span class="w-3 h-3 rounded-full bg-red-400"></span>
+<span class="w-3 h-3 rounded-full bg-amber-400"></span>
+<span class="w-3 h-3 rounded-full bg-emerald-400"></span>
+<div class="h-4 w-px bg-surface-container-high mx-2"></div>
+<span class="text-xs font-mono font-medium text-on-surface-variant flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px] text-primary">lock</span>
+                console.sovereignauth.io/cluster/us-east-1
+              </span>
+</div>
+<div class="flex items-center space-x-2 text-xs text-on-surface-variant font-medium">
+<span class="inline-flex items-center gap-1 px-2 py-0.5 rounded bg-emerald-50 text-emerald-700 text-[11px] font-semibold">
+<span class="w-1.5 h-1.5 rounded-full bg-emerald-500"></span>
+                Cluster Sync Active
+              </span>
+</div>
+</div>
+<!-- Console Interior -->
+<div class="p-6 space-y-5">
+<!-- Metric Pill Row -->
+<div class="grid grid-cols-3 gap-3">
+<div class="p-3.5 rounded-xl bg-surface-container-low border border-surface-container-high">
+<p class="text-[11px] font-medium text-on-surface-variant uppercase tracking-wider">Active Policies</p>
+<div class="flex items-baseline space-x-2 mt-1">
+<span class="text-xl font-bold font-headline-md text-on-surface">24 / 24</span>
+<span class="text-[11px] text-emerald-600 font-semibold flex items-center">100%</span>
+</div>
+</div>
+<div class="p-3.5 rounded-xl bg-surface-container-low border border-surface-container-high">
+<p class="text-[11px] font-medium text-on-surface-variant uppercase tracking-wider">Threats Deflected</p>
+<div class="flex items-baseline space-x-2 mt-1">
+<span class="text-xl font-bold font-headline-md text-on-surface">1,842</span>
+<span class="text-[11px] text-primary font-semibold flex items-center">Today</span>
+</div>
+</div>
+<div class="p-3.5 rounded-xl bg-surface-container-low border border-surface-container-high">
+<p class="text-[11px] font-medium text-on-surface-variant uppercase tracking-wider">Avg Latency</p>
+<div class="flex items-baseline space-x-2 mt-1">
+<span class="text-xl font-bold font-headline-md text-on-surface">14ms</span>
+<span class="text-[11px] text-emerald-600 font-semibold">Edge</span>
+</div>
+</div>
+</div>
+<!-- Recent Logins & Geo-verification Feed -->
+<div class="p-4 rounded-xl border border-surface-container-high bg-surface-container-lowest">
+<div class="flex items-center justify-between mb-3">
+<div class="flex items-center space-x-2">
+<span class="material-symbols-outlined text-[18px] text-primary">public</span>
+<span class="text-xs font-semibold text-on-surface">Recent Logins &amp; Geo-verification</span>
+</div>
+<span class="text-[11px] text-outline font-mono">Live Stream</span>
+</div>
+<!-- Stream Entries -->
+<div class="space-y-2 font-mono text-xs">
+<div class="flex items-center justify-between p-2 rounded-lg bg-surface-container-low/70">
+<div class="flex items-center space-x-2.5">
+<span class="w-2 h-2 rounded-full bg-emerald-500"></span>
+<span class="text-on-surface font-sans font-medium text-xs">sso.admin@apexcloud.io</span>
+<span class="text-outline text-[11px] font-sans">San Francisco, US</span>
+</div>
+<span class="px-2 py-0.5 rounded text-[10px] font-sans font-semibold bg-emerald-100 text-emerald-800">Passkey Verified</span>
+</div>
+<div class="flex items-center justify-between p-2 rounded-lg bg-surface-container-low/70">
+<div class="flex items-center space-x-2.5">
+<span class="w-2 h-2 rounded-full bg-emerald-500"></span>
+<span class="text-on-surface font-sans font-medium text-xs">dev.lead@fintech-core.eu</span>
+<span class="text-outline text-[11px] font-sans">Frankfurt, DE</span>
+</div>
+<span class="px-2 py-0.5 rounded text-[10px] font-sans font-semibold bg-emerald-100 text-emerald-800">MFA Approved</span>
+</div>
+<div class="flex items-center justify-between p-2 rounded-lg bg-surface-container-low/70">
+<div class="flex items-center space-x-2.5">
+<span class="w-2 h-2 rounded-full bg-emerald-500"></span>
+<span class="text-on-surface font-sans font-medium text-xs">ciso@nordicpay.se</span>
+<span class="text-outline text-[11px] font-sans">Stockholm, SE</span>
+</div>
+<span class="px-2 py-0.5 rounded text-[10px] font-sans font-semibold bg-emerald-100 text-emerald-800">Biometric TouchID</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Floating Card 1: Team Protected Badge (Bottom-Right overlap) -->
+<div class="absolute -bottom-6 -right-4 p-4 rounded-xl bg-surface-container-lowest border border-surface-container-high shadow-xl flex items-center space-x-3.5 backdrop-blur-md">
+<div class="w-10 h-10 rounded-lg bg-primary/10 flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[24px]">group</span>
+</div>
+<div>
+<p class="text-[11px] uppercase tracking-wide font-semibold text-outline">Team Members Protected</p>
+<p class="text-lg font-bold text-on-surface font-headline-sm">14,280+ active seats</p>
+</div>
+<div class="pl-2 border-l border-surface-container-high">
+<span class="inline-flex items-center text-xs font-semibold text-emerald-600 bg-emerald-50 px-2 py-1 rounded">
+              +18% mo/mo
+            </span>
+</div>
+</div>
+<!-- Floating Card 2: Security Policy Status (Top-Left overlap) -->
+<div class="hidden sm:flex absolute -top-5 -left-5 p-3.5 rounded-xl bg-inverse-surface text-inverse-on-surface shadow-xl items-center space-x-3 border border-white/10">
+<span class="w-2.5 h-2.5 rounded-full bg-emerald-400 animate-ping"></span>
+<div>
+<p class="text-xs font-semibold text-white">Active Security Policies</p>
+<p class="text-[11px] text-slate-300">Continuous risk engine running</p>
+</div>
+</div>
+</div>
+<!-- Testimonial Quote under Showcase -->
+<div class="mt-10 p-5 rounded-xl bg-surface-container-lowest/80 border border-surface-container-high flex items-center justify-between">
+<div class="flex items-center space-x-3">
+<div class="w-10 h-10 rounded-full bg-cover bg-center ring-2 ring-primary/20 flex-shrink-0" data-alt="Elena Rostova portrait" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDO1Xx77HUpkCfGSgh-gHiKD3I96tbNmfosbbOYDO3R9QJd7s8vO8gLe2PyrSJTOJ0imHKwvs9NiJER02z8tniJOXH_ddI9SPLGu01vfhOQRJR67VMwkrNqAconiKLdPM_pEzUai-h9rPXRoE9-PMFklv_Z-f-BvfYDPeeQa8f5siOqS9tmcL83bPLqFkiRCgnCZm9nLpNjdOzvNDPdGIVcJOyjM0bdeW361qscW7KKfjOSGZufF7xZsQ')"></div>
+<div>
+<p class="text-xs font-medium text-on-surface">“Sovereign Auth cut our setup time from weeks to an afternoon.”</p>
+<p class="text-[11px] text-on-surface-variant font-medium">Elena Rostova • VP of Infrastructure, Apex Cloud</p>
+</div>
+</div>
+<div class="flex text-amber-400">
+<span class="material-symbols-outlined text-[16px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[16px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[16px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[16px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[16px]" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+</div>
+</div>
+<!-- Bottom Showcase Footer Navigation -->
+<div class="relative z-10 flex items-center justify-between text-on-surface-variant text-xs">
+<p>© 2025 Sovereign Auth Inc. All protocols secured.</p>
+<div class="flex items-center space-x-4">
+<a class="hover:text-primary transition-colors" href="#status">System Status</a>
+<a class="hover:text-primary transition-colors" href="#privacy">Privacy</a>
+<a class="hover:text-primary transition-colors" href="#terms">Terms</a>
+<a class="hover:text-primary transition-colors" href="#docs">API Docs</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+<script>
+  function togglePasswordVisibility() {
+    const passwordInput = document.getElementById('password');
+    const eyeIcon = document.getElementById('eyeIcon');
+    if (passwordInput.type === 'password') {
+      passwordInput.type = 'text';
+      eyeIcon.textContent = 'visibility_off';
+    } else {
+      passwordInput.type = 'password';
+      eyeIcon.textContent = 'visibility';
+    }
+  }
+
+  function handleAuth() {
+    const submitBtn = document.getElementById('submitBtn');
+    submitBtn.disabled = true;
+    submitBtn.innerHTML = `
+      <svg class="animate-spin -ml-1 mr-2 h-4 w-4 text-white inline-block" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
+        <circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"></circle>
+        <path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path>
+      </svg>
+      <span>Authenticating session...</span>
+    `;
+    setTimeout(() => {
+      submitBtn.innerHTML = `
+        <span class="material-symbols-outlined text-[18px]">check_circle</span>
+        <span>Identity Verified</span>
+      `;
+      submitBtn.classList.remove('bg-primary');
+      submitBtn.classList.add('bg-emerald-600');
+    }, 1100);
+  }
+</script></main></body></html>
